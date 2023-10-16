@@ -191,29 +191,36 @@ body {
     margin-right: 30px;
     border-radius: 10px;
     animation-name: rotate;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
     animation-duration: 7s;
 }
 
 @keyframes rotate {
     0% {
-        transform: rotateY(0deg);
+        transform: scale(0);
     }
 
     25% {
-        transform: rotateY(-80deg);
+        transform: scale(0.9);
+        transition: .5s;
     }
 
     50% {
-        transform: rotateY(80deg);
+        transform: scale(0.5);
+        transition: .5s;
+
     }
 
     75% {
-        transform: rotateY(-80deg);
+        transform: scale(1.0);
+        transition: .5s;
+
     }
 
     100% {
-        transform: rotateY(80deg);
+        transform: scale(0.8);
+        transition: .5s;
+
     }
 }
 
@@ -728,6 +735,7 @@ body {
     cursor: pointer;
     transition: all .5s;
     text-decoration: underline;
+    font-weight: bolder;
 }
 .contact-Links-Social button{  
     border: none;
