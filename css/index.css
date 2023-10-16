@@ -18,9 +18,8 @@ body {
     justify-content: space-between;
     height: 70px;
     /* margin: 15px; */
-    margin-left: 10px;
-    margin-right: 10px;
     /* height: 200px; */
+    padding: 10px;
     position: fixed;
     left: 0;
     right: 0;
@@ -574,7 +573,6 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     margin-left: 20px;
-    color: #fff;
 }
 .contact-subSection{
     display: flex;
@@ -702,7 +700,74 @@ body {
     transition: .4s ease-in-out;
 }
 
-
+#footer{
+    margin: 0;
+    color: #fff;
+    background: rgb(123, 123, 123);
+    padding: 10px;
+    text-align: center;
+}
+.footerHeadre{
+    font-size: 2.7rem;
+}
+.nav-linksFooter ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 20px;
+}
+.nav-linksFooter ul li{
+    padding: 15px;
+}
+.nav-linksFooter ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-linksFooter a:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .5s;
+    text-decoration: underline;
+}
+.contact-Links-Social button{  
+    border: none;
+    background: none;
+    padding: 15px;
+}
+.contact-Links-Social i{
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+    background: #000;
+    border-radius: 8px;
+}
+.main-Foot{
+    margin-top: 15px;
+    font-size: 17px;
+}
+/* styling for google translate page */
+.goog-te-combo{
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    outline: none;
+}
+.goog-te-combo:hover{
+    border: 2px solid rgb(11, 11, 11);
+    cursor: pointer;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link{
+    display: none;
+}
+/* .VIpgJd-ZVi9od-ORHb img{
+    display: none;
+}
+.VIpgJd-ZVi9od-LgbsSe {
+    display: none;
+}
+.VIpgJd-ZVi9od-LgbsSe button{
+    display: none;
+} */
 @media (width <=820px) {
 
     /* *{
