@@ -618,7 +618,7 @@ body {
 .socialMediaContacts i:hover{
     color: #ffa500;
 }
-.certificate{
+.certificate, .resume{
     background: rgb(186, 11, 11);
     width: 140px;
     font-weight: bold;
@@ -626,14 +626,19 @@ body {
     color: rgb(246, 243, 243);
     border: 2px solid rgb(186, 11, 11);
     border-radius: 7px;
+    
 }
-.certificate:hover{
+.resume{
+    margin-left: 10px;
+}
+.certificate:hover,
+.resume:hover{
     background: transparent;
     transition: all .5s;
     transform: scale(1.2, 1.3);
     cursor: grab;
 }
-.certificate a{
+.certificate a, .resume a{
     color: #fff;
     text-decoration: none;
 }
@@ -874,6 +879,10 @@ body {
     /* for the contact section sub-section */
     .contact-subSection{
         display: block
+    }
+    .resume{
+        margin-top: 20px;
+        margin-left: 0;
     }
     /* for the contact form  */
     .nameInput, .emailInput, #YourTextMsg{
