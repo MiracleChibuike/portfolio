@@ -127,23 +127,19 @@ body {
 
 @keyframes bounce {
     0% {
-        transform: translateX(0);
-        transform: rotateY(-60deg);
+        transform: scale(0);
     }
 
     50% {
-        transform: translateX(20px);
-        transform: rotateX(60deg);
+        transform: scale(0.5);
     }
 
     75% {
-        transform: translateX(-25px);
-        transform: rotateX(-60deg);
+        transform: scale(0.7);
     }
 
     100% {
-        transform: translateX(20px);
-        transform: rotateY(60deg);
+        transform: scale(0.5);
     }
 }
 
@@ -344,7 +340,7 @@ body {
 .servicesContainer div {
     margin: 20px;
     padding: 20px;
-    background: rgb(19, 19, 19);
+    background: rgb(91, 88, 88);
     border-radius: 15px;
     width: auto;
     height: auto;
@@ -549,7 +545,7 @@ body {
 
 .hobbiesContainer1 div {
     /* background-color: #020202; */
-    background: rgb(19, 19, 19);
+    background: rgb(91, 88, 88);
     width: 150px;
     height: 150px;
     margin: 10px;
