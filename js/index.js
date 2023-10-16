@@ -71,7 +71,7 @@ submitFormBtn.addEventListener("click", function () {
         console.log(clientName.value)
         return false;
     }else if(clientEmail.value ==""){
-        alert("Email can't be black");
+        alert("Email can't be blank");
         return false;
     }else{
         return true;

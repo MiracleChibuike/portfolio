@@ -629,7 +629,8 @@ body {
     
 }
 .resume{
-    margin-left: 10px;
+    margin-left: 0;
+    margin-top: 15px;
 }
 .certificate:hover,
 .resume:hover{
