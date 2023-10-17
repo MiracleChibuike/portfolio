@@ -5,9 +5,14 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-
+:root{
+    --black-color-main: #000;
+    --white-color-main: #fff;
+    --white-color-semi: rgb(150, 149, 149);
+    --secondary-white-color: #dcd7d7;
+}
 body {
-    background-color: #000;
+    background-color: var(--black-color-main);
 }
 
 /* NAVS SECTION */
@@ -72,10 +77,24 @@ body {
     text-decoration: underline;
     border-radius: 5px;
 }
+/* style for the moon icon */
+.fa-moon, #second-dark{
+    font-size: 25px;
+}
+.fa-moon:hover,
+#second-dark:hover{
+    color: var(--white-color-semi);
+    transition: all .7s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#second-dark{
+    display: none;
+}
 
 /* HOME-SECTION */
 #home {
-    color: #fff;
+    color: var(--white-color-main);
     display: flex;
     justify-content: space-between;
     margin: 50px;
@@ -781,12 +800,29 @@ body {
         display: block;
     }
 
-    .navbarIcon i {
+    .navbarActive {
         border: 4px solid rgb(150, 150, 150);
         background-color: #fff;
         padding: 3px;
         border-radius: 8px;
         margin-top: 10px;
+        color: var(--black-color-main);
+        font-size: 25px;
+    }
+    #navbarCancel{
+        border: 4px solid rgb(150, 150, 150);
+        background-color: #fff;
+        padding: 3px;
+        border-radius: 8px;
+        margin-top: 10px;
+        color: var(--black-color-main);
+        font-size: 25px;
+        display: none;
+    }
+    .navbarActive:hover,
+    #navbarCancel:hover{
+        cursor: pointer;
+        transition: all 9s;
     }
 
     .nav-links ul li {

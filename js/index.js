@@ -1,26 +1,89 @@
 
-
-// Toggle visibility//
-// const backgrounBG = document.body;
-// let cast = document.getElementById("Visible");
-// cast.addEventListener("click", function() {
-//     if (backgrounBG.style.backgroundColor == "#0000") {
-//         backgrounBG.style.backgroundColor = "#fff"
-//     }else {
-//         backgrounBG.style.visibility = "#0000"
-//     }
-// })
+// THIS CODE IS RESPONSIBLE FOR CHANGING THE BACKGROUND COLOR OF OUR WEBSITE TO WHITE OR GRAY
+let moreProjects = document.querySelector(".ExploreMore")
+const linkedInMe = document.querySelector(".fa-linkedin");
+const lineMe = document.querySelector(".fa-line");
+const whatsAppMe = document.querySelector(".fa-whatsapp")
+var email_Container = document.querySelector(".emailMe");
+var phone_Container = document.querySelector(".phoneMe");
+let devservicesHeader = document.querySelector(".developerServicesHeader");
+let PT_Header = document.querySelector(".portfolio-header");
+let Hobbies_Header = document.querySelector(".hobbiesHeader");
+let last_Headre = document.querySelector(".contactHeader")
+let allHeadersArray = [devservicesHeader, PT_Header, Hobbies_Header, last_Headre]
+const togglebg = document.getElementById("backgroundColor-toggle");
+const actionToggle = document.body;
+const aboutMe = document.getElementById("about");
+const homeSection = document.getElementById("home");
+const icondark = document.getElementById("second-dark");
+togglebg.addEventListener("click", function ChangeColor() {
+    if (actionToggle.style.backgroundColor = "#000") {
+        console.log(allHeadersArray)
+        actionToggle.style.backgroundColor = "#dcd7d7"
+        homeSection.style.color = "#000"
+        aboutMe.style.color = "#000"
+        devservicesHeader.style.color = "#000"
+        PT_Header.style.color = "#000"
+        Hobbies_Header.style.color = "#000"
+        last_Headre.style.color = "#000"
+        moreProjects.style.color= "#000"
+        email_Container.style.color = "#000"
+        phone_Container.style.color = "#000"
+        linkedInMe.style.color = "#000"
+        lineMe.style.color = "#000"
+        whatsAppMe.style.color = "#000"
+        // To change the icon
+        icondark.style.display = "block"
+        togglebg.style.display = "none"
+    }
+})
+// this code is to change the background color to default when clicked
+icondark.addEventListener("click", function () {
+    if (actionToggle.style.backgroundColor = "#dcd7d7") {
+        actionToggle.style.backgroundColor = "#000";
+        icondark.style.display = "none"
+        togglebg.style.display = "block"
+        // changing the colors of the texts
+        homeSection.style.color = "#fff"
+        aboutMe.style.color = "#fff"
+        devservicesHeader.style.color = "#fff"
+        PT_Header.style.color = "#fff"
+        Hobbies_Header.style.color = "#fff"
+        last_Headre.style.color = "#fff"
+        moreProjects.style.color= "#fff"
+        email_Container.style.color = "#fff"
+        phone_Container.style.color = "#fff"
+        linkedInMe.style.color = "#fff"
+        lineMe.style.color = "#fff"
+        whatsAppMe.style.color = "#fff"
+    }
+})
 // NAV-LINKS TOGGLE CODE
-
+let navberCancel = document.getElementById("navbarCancel");
+let navberActive = document.querySelector(".navbarActive");
 function navToggle() {
     let togglerLinks = document.querySelector(".nav-links");
     console.log(togglerLinks);
-    if (togglerLinks.style.display === "none") {
+    if (togglerLinks.style.display = "none") {
         togglerLinks.style.display = "block"
+        navberActive.style.display = "none"
+        navberCancel.style.display = "block"
     }else{
+        
         togglerLinks.style.display = "none"
     }
 }
+navberCancel.addEventListener("click", function () {
+    let togglerLinks = document.querySelector(".nav-links");
+
+    if (togglerLinks.style.display = "block") {
+        togglerLinks.style.display = "none"
+        navberActive.style.display = "block"
+        navberCancel.style.display = "none"
+
+    }
+})
+
 
 // ABOUT ME SECTION
 

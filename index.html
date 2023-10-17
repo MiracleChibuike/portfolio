@@ -20,7 +20,9 @@
       <div class="navs">
         <h2 class="logo"><span class="logoSapan">M</span>IRACLE.</h2>
         <!-- THE CODE FOR MY NAVBARICON -->
-      <div class="navbarIcon">  <i class="fa-solid fa-bars" style="color: #000; font-size: 25px;" onclick="navToggle()"></i></div>
+      <div class="navbarIcon">  <i class="fa-solid fa-bars navbarActive"  onclick="navToggle()"></i>
+        <i class="fa-solid fa-xmark" id="navbarCancel"></i>
+      </div>
             <!-- THE CODE FOR MY NAVBARICON -->
             
         <div class="nav-links">
@@ -31,6 +33,7 @@
             <li> <a href="#portfolio">Portfolio</a> </li>
             <li> <a href="#hobbies">Hobbies</a> </li>
             <li> <a href="#contact">Contact</a> </li>
+            <li><i class="fa-solid fa-moon" id="backgroundColor-toggle"></i> <i class="fa-regular fa-moon" id="second-dark"></i></li>
           </ul>
         </div>
       </div>
@@ -40,7 +43,7 @@
           <p class="write-up">Front-end Developer</p>
           <h2 class="developerIntro">
             Hi, I'm <span class="name">Miracle</span>
-             <br> Chibuike From Nigeria. 
+             <br> Chibuike From Nigeria.
           </h2>
         </div>
         <dic class="profileImage">
@@ -259,7 +262,7 @@
           </div>
           <!-- CONTAINER TO EXPLORE MORE SECTION OR PROJETCS -->
           <button class="more">
-            <a href="https://github.com/MiracleChibuike?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/MiracleChibuike?tab=repositories" target="_blank" rel="noopener noreferrer" class="ExploreMore">
               Explore more <i class="fa-solid fa-bars-filter"></i>
             </a>
             <i class="fa-solid fa-circle-arrow-right more-arrow"></i>
@@ -306,14 +309,14 @@
             <div class="email">
               <i class="fa-solid fa-envelope"></i>
               <p class="email-text">
-                <a href="mailto:miraclechibuike27@gmail.com">miraclechibuike27@gmail.com</a>
+                <a href="mailto:miraclechibuike27@gmail.com" class="emailMe">miraclechibuike27@gmail.com</a>
               </p>
             </div>
             <!-- for phone contact -->
             <div class="phoneCall">
               <i class="fa-solid fa-phone"></i>
               <p class="phone-text">
-                <a href="tel:+2347043382546">0704 338  2546</a>
+                <a href="tel:+2347043382546" class="phoneMe">0704 338  2546</a>
               </p>
             </div>
             <div class="socialMediaContacts">
