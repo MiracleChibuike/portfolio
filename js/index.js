@@ -84,6 +84,24 @@ navberCancel.addEventListener("click", function () {
     }
 })
 
+// HOME SECTION
+// This section is to alert a message to anyone visiting the site who wishes to buy me a coffee
+let agreeSend = "Yes"
+let refuseSend = "No"
+const buyCoffee = document.querySelector(".coffe");
+buyCoffee.addEventListener("click", function () {
+   let CoffeResponse = prompt('Confirm You Want To Donate To Miracle?', "Yes/No" );
+   CoffeResponse;
+   if (CoffeResponse = agreeSend) {
+    alert("checked - yes")
+   }else if(CoffeResponse = String(refuseSend)){
+    alert("cancelled")
+   }
+
+
+    console.log(CoffeResponse)
+
+})
 
 // ABOUT ME SECTION
 
