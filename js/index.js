@@ -90,16 +90,39 @@ let agreeSend = "Yes"
 let refuseSend = "No"
 const buyCoffee = document.querySelector(".coffe");
 buyCoffee.addEventListener("click", function () {
-   let CoffeResponse = prompt('Confirm You Want To Donate To Miracle?', "Yes/No" );
+//    let CoffeResponse = prompt("What is your name?")
+  let CoffeResponse = prompt('Confirm You Want To Donate To Miracle?', "Yes/No" );
    CoffeResponse;
-   if (CoffeResponse = agreeSend) {
-    alert("checked - yes")
-   }else if(CoffeResponse = String(refuseSend)){
+   if (CoffeResponse == "Yes") {
+    // confirm("You about to make a transfer to Miracle")
+    alert(`Please Transfer to this account below \n BIC/SWIFT Code: FBNINGLA XXX \n Account Number: 3166571786 \n Account Holder: Onyia Miracle Chibuike \n Bank: First Bank Of Nigeria`)
+    let userResponse = prompt("Did you Transfer?", "Yes/No")
+    userResponse;
+    if (userResponse == "Yes") {
+        alert("Please kindly contact Miracle On the Contact Section of this page below for Confirmation. We deeply appreciate \n Thanks for your support")
+    }else{
+        confirm("Thanks for your time - The Transaction has been canceled as per your order")
+    }
+   } else if (CoffeResponse === "yes") {
+    alert(`Please Transfer to this account below \n BIC/SWIFT Code: FBNINGLA XXX \n Account Number: 3166571786 \n Account Holder: Onyia Miracle Chibuike \n Bank: First Bank Of Nigeria`)
+    let userResponse = prompt("Did you Transfer?", "Yes/No");
+    userResponse;
+    if (userResponse === "yes") {
+        alert("Please kindly contact Miracle On the Contact Section of this page  below for Confirmation. We deeply appreciate \n Thanks for your support")
+    }else{
+        confirm("Thanks for your time - The Transaction has been canceled as per your order")
+    }
+
+
+   }
+   else {
     alert("cancelled")
    }
+  
+//    agreeSend = CoffeResponse;
+console.log(agreeSend)
 
 
-    console.log(CoffeResponse)
 
 })
 
