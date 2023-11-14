@@ -90,6 +90,7 @@ let agreeSend = "Yes"
 let refuseSend = "No"
 const buyCoffee = document.querySelector(".coffe");
 buyCoffee.addEventListener("click", function () {
+    console.log(buyCoffee)
 //    let CoffeResponse = prompt("What is your name?")
   let CoffeResponse = prompt('Confirm You Want To Donate To Miracle?', "Yes/No" );
    CoffeResponse;

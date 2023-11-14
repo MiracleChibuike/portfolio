@@ -125,24 +125,40 @@ body {
 }
 
 .coffe {
-    width: 120px;
+    padding: 10px;
     height: 50px;
     border: none;
     color: #fff;
-    background-color: #ffa500;
+    background-color: #53b313;
     font-size: 20px;
     border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 12px;
+    animation-name: buttonRotate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes buttonRotate {
+    0%{
+        transform: scale(0);
+    }
+    25%, 50%, 100%{
+        transform: scale(0.9, 1.1);
+        transition: all .5s ease-in-out;
+    }
 }
 
 .coffe:hover {
     color: #000;
     background-color: #fff;
     font-weight: bold;
-    transform: translateX(10px);
+    transform: translateY(10px);
     cursor: grab;
     transition: all .7s;
     box-shadow: 3px 3px 20px #8e8c8c;
 }
+
 
 @keyframes bounce {
     0% {
@@ -872,26 +888,6 @@ body {
         font-size: 30px;
         width: 100%;
         z-index: -100;
-    }
-
-    .coffe {
-        width: 120px;
-        height: 50px;
-        border: none;
-        color: #fff;
-        background-color: #ffa500;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-    
-    .coffe:hover {
-        color: #000;
-        background-color: #fff;
-        font-weight: bold;
-        transform: translateX(10px);
-        cursor: grab;
-        transition: all .7s;
-        box-shadow: 3px 3px 20px #8e8c8c;
     }
 
     .profileImage {
