@@ -821,28 +821,28 @@ body {
     }
 
     .navbarActive {
-        border: 4px solid rgb(150, 150, 150);
-        background-color: #fff;
-        padding: 3px;
-        border-radius: 8px;
+        border: 3px solid rgb(150, 150, 150);
+        background-color: transparent;
+        padding: 7px;
+        border-radius: 10px;
         margin-top: 10px;
-        color: var(--black-color-main);
+        color: var(--secondary-white-color);
         font-size: 25px;
     }
     #navbarCancel{
-        border: 4px solid rgb(150, 150, 150);
-        background-color: #fff;
-        padding: 3px;
+        border: 3px solid rgb(150, 150, 150);
+        background-color: transparent;
+        padding: 7px;
         border-radius: 8px;
         margin-top: 10px;
-        color: var(--black-color-main);
+        color: var(--secondary-white-color);
         font-size: 25px;
         display: none;
     }
     .navbarActive:hover,
     #navbarCancel:hover{
         cursor: pointer;
-        transition: all 9s;
+        transition: all 5s ease-in-out;
     }
 
     .nav-links ul li {
