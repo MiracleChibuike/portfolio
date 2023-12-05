@@ -89,43 +89,57 @@ navberCancel.addEventListener("click", function () {
 let agreeSend = "Yes"
 let refuseSend = "No"
 const buyCoffee = document.querySelector(".coffe");
-buyCoffee.addEventListener("click", function () {
-    console.log(buyCoffee)
-//    let CoffeResponse = prompt("What is your name?")
-  let CoffeResponse = prompt('Confirm You Want To Donate To Miracle?', "Yes/No" );
-   CoffeResponse;
-   if (CoffeResponse == "Yes") {
-    // confirm("You about to make a transfer to Miracle")
-    alert(`Please Transfer to this account below \n BIC/SWIFT Code: FBNINGLA XXX \n Account Number: 3166571786 \n Account Holder: Onyia Miracle Chibuike \n Bank: First Bank Of Nigeria`)
-    let userResponse = prompt("Did you Transfer?", "Yes/No")
-    userResponse;
-    if (userResponse == "Yes") {
-        alert("Please kindly contact Miracle On the Contact Section of this page below for Confirmation. We deeply appreciate \n Thanks for your support")
+function SupportMe() {
+    let userResponse = prompt("Confirm you want to donate to Miracle?", "Yes/No");
+    userResponse = userResponse.toLowerCase();
+    console.log(userResponse);
+    if (userResponse == 'no') {
+        alert("Operation Cancelled")
     }else{
-        confirm("Thanks for your time - The Transaction has been canceled as per your order")
+        onload = alert(' Please visit https://www.buymeacoffee.com/MiracleChibuike to make your donation')
     }
-   } else if (CoffeResponse === "yes") {
-    alert(`Please Transfer to this account below \n BIC/SWIFT Code: FBNINGLA XXX \n Account Number: 3166571786 \n Account Holder: Onyia Miracle Chibuike \n Bank: First Bank Of Nigeria`)
-    let userResponse = prompt("Did you Transfer?", "Yes/No");
-    userResponse;
-    if (userResponse === "yes") {
-        alert("Please kindly contact Miracle On the Contact Section of this page  below for Confirmation. We deeply appreciate \n Thanks for your support")
-    }else{
-        confirm("Thanks for your time - The Transaction has been canceled as per your order")
-    }
+}
+// buyCoffee.addEventListener("click", function () {
+//     console.log(buyCoffee);
+//     onload
+// //    let CoffeResponse = prompt("What is your name?")
+//   let CoffeResponse = prompt('Confirm You Want To Donate To Miracle?', "Yes/No" );
+//    CoffeResponse.toUpperCase();
+//    if (CoffeResponse == "Yes") {
+//     // confirm("You about to make a transfer to Miracle")
+//     alert(`Please Transfer to this account below \n BIC/SWIFT Code: FBNINGLA XXX \n Account Number: 3166571786 \n Account Holder: Onyia Miracle Chibuike \n Bank: First Bank Of Nigeria
+//     \n OR Simply visit  https://www.buymeacoffee.com/MiracleChibuike  \n to donate directly
+    
+//     `)
+//     let userResponse = prompt("Did you Transfer?", "Yes/No")
+//     userResponse;
+//     if (userResponse == "Yes") {
+//         alert("Please kindly contact Miracle On the Contact Section of this page below for Confirmation. We deeply appreciate \n Thanks for your support")
+//     }else{
+//         confirm("Thanks for your time - The Transaction has been canceled as per your order")
+//     }
+//    } else if (CoffeResponse === "yes") {
+//     alert(`Please Transfer to this account below \n BIC/SWIFT Code: FBNINGLA XXX \n Account Number: 3166571786 \n Account Holder: Onyia Miracle Chibuike \n Bank: First Bank Of Nigeria`)
+//     let userResponse = prompt("Did you Transfer?", "Yes/No");
+//     userResponse;
+//     if (userResponse === "yes") {
+//         alert("Please kindly contact Miracle On the Contact Section of this page  below for Confirmation. We deeply appreciate \n Thanks for your support")
+//     }else{
+//         confirm("Thanks for your time - The Transaction has been canceled as per your order")
+//     }
 
 
-   }
-   else {
-    alert("cancelled")
-   }
+//    }
+//    else {
+//     alert("cancelled")
+//    }
   
-//    agreeSend = CoffeResponse;
-console.log(agreeSend)
+// //    agreeSend = CoffeResponse;
+// console.log(agreeSend)
 
 
 
-})
+// })
 
 // ABOUT ME SECTION
 
