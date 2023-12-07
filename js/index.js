@@ -90,13 +90,39 @@ let agreeSend = "Yes"
 let refuseSend = "No"
 const buyCoffee = document.querySelector(".coffe");
 function SupportMe() {
+    // For the tag to display the link
+    
     let userResponse = prompt("Confirm you want to donate to Miracle?", "Yes/No");
     userResponse = userResponse.toLowerCase();
     console.log(userResponse);
     if (userResponse == 'no') {
         alert("Operation Cancelled")
     }else{
-        onload = alert(' Please visit https://www.buymeacoffee.com/MiracleChibuike to make your donation')
+        let supportText = document.getElementById("TextCoffee");
+    // Creating anchor element
+    var a = document.createElement('a');
+    // Creating a text node for anchor element
+    var link = document.createTextNode("Visit this link to donate");
+    // appending the textnode to anchor element
+    a.appendChild(link);
+    // Setting the title of my anchor
+    a.title = 'A link to support my project';
+    // setting the href prorpety
+    a.href = "https://www.buymeacoffee.com/MiracleChibuike";
+    // Appending the anchor element to the body
+    // document.body.appendChild(a);
+   alert(`${supportText.appendChild(a)} \n  \n A secured link with this reference above will be made availble for you to make your contribution...  \n 
+   Kindly click on the tab titled: "Visit this link to donate"  which is going to take you to the buymeacoffee.com secured website to make your contribution\n 
+    \n Thanks, I truly appreciate🤝🤝`)
+    // supportText.appendChild(a);
+
+
+
+
+        // fetch('https://www.buymeacoffee.com/MiracleChibuike')
+        // .then(Response => Response.json())
+        // .then(json => console.log(json))
+        // .catch(err => console.log('Request failed', err))
     }
 }
 // buyCoffee.addEventListener("click", function () {
