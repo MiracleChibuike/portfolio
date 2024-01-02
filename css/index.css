@@ -989,13 +989,15 @@ body {
     }
 
     .hobbiesContainer1 {
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        overflow-x: scroll;
         /* text-align: center; */
     }
 
     .hobbiesContainer1 div {
         text-align: center;
-        margin-left: 70px;
+        margin-left: 35px;
     }
                                                 /* CONTACT SECTION */
     /* for the contact section sub-section */

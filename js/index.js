@@ -84,6 +84,15 @@ navberCancel.addEventListener("click", function () {
     }
 })
 
+function close(){
+     let toogle = document.querySelector(".nav-links");
+
+     if ((toogle.style.display = "block")) {
+       toogle.style.display = "none";
+       navberActive.style.display = "block";
+       navberCancel.style.display = "none";
+     }
+}
 // HOME SECTION
 // This section is to alert a message to anyone visiting the site who wishes to buy me a coffee
 let agreeSend = "Yes"
