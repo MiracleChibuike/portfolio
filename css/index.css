@@ -824,20 +824,25 @@ body {
     .navbarActive {
         border: 3px solid rgb(150, 150, 150);
         background-color: transparent;
-        padding: 7px;
-        border-radius: 10px;
+        padding: 4px;
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
         margin-top: 10px;
         color: var(--secondary-white-color);
-        font-size: 25px;
+        font-size: 20px;
     }
+
     #navbarCancel{
         border: 3px solid rgb(150, 150, 150);
-        background-color: transparent;
-        padding: 7px;
-        border-radius: 8px;
-        margin-top: 10px;
-        color: var(--secondary-white-color);
-        font-size: 25px;
+            background-color: transparent;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 7px;
+            margin-top: 10px;
+            color: var(--secondary-white-color);
+            font-size: 20px;
         display: none;
     }
     .navbarActive:hover,
@@ -861,9 +866,24 @@ body {
         border-radius: 35px;
         width: 100%;
         transform: translateY(10px);
+        animation-name: navAnimC;
+            animation-iteration-count: 1;
+            animation-duration: 7s;
         /* z-index: -500; */
     }
-
+    @keyframes navAnimC {
+        0% {
+                /* height: 0; */
+                width: 0;
+            }
+        
+            20%,
+            50%,
+            100% {
+                /* height: 550px; */
+                width: 100%;
+            }
+    }
     .nav-links a {
         display: block;
         text-align: center;

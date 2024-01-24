@@ -107,22 +107,31 @@ function SupportMe() {
     if (userResponse == 'no') {
         alert("Operation Cancelled")
     }else{
-        let supportText = document.getElementById("TextCoffee");
+        // let supportText = document.getElementById("TextCoffee");
+        setTimeout (function(){
+                          alert(
+                            "You are being re-directed to buyme a coffe website where you can support my project - Thanks"
+                          );
+
+            window.location.href =
+              "https://www.buymeacoffee.com/MiracleChibuike";
+        }, 2000)
+
     // Creating anchor element
-    var a = document.createElement('a');
+    // var a = document.createElement('a');
     // Creating a text node for anchor element
-    var link = document.createTextNode("Visit this link to donate");
+    // var link = document.createTextNode("Visit this link to donate");
     // appending the textnode to anchor element
-    a.appendChild(link);
+    // a.appendChild(link);
     // Setting the title of my anchor
-    a.title = 'A link to support my project';
+    // a.title = 'A link to support my project';
     // setting the href prorpety
-    a.href = "https://www.buymeacoffee.com/MiracleChibuike";
+    // a.href = "https://www.buymeacoffee.com/MiracleChibuike";
     // Appending the anchor element to the body
     // document.body.appendChild(a);
-   alert(`${supportText.appendChild(a)} \n  \n A secured link with this reference above will be made availble for you to make your contribution...  \n 
-   Kindly click on the tab titled: "Visit this link to donate"  which is going to take you to the buymeacoffee.com secured website to make your contribution\n 
-    \n Thanks, I truly appreciate🤝🤝`)
+//    alert(`${supportText.appendChild(a)} \n  \n A secured link with this reference above will be made availble for you to make your contribution...  \n 
+//    Kindly click on the tab titled: "Visit this link to donate"  which is going to take you to the buymeacoffee.com secured website to make your contribution\n 
+//     \n Thanks, I truly appreciate🤝🤝`)
     // supportText.appendChild(a);
 
 
