@@ -1,4 +1,29 @@
 
+// To control the animation
+function ShowLoader() {
+    var conatiner_main = document.querySelector(".main-container");
+    var headre_Content = document.querySelector(".loader");
+    var loaderText = document.querySelector(".loaderText");
+
+    // Show loader Initially
+
+    headre_Content.style.display = "block";
+    conatiner_main.style.display = "none";
+
+    setTimeout (function () {
+        headre_Content.style.display = "none";
+        conatiner_main.style.display = "block";
+        loaderText.style.display = "none"
+    }, 7000)
+
+
+}
+// Call the loadAnim function when your page is ready
+document.addEventListener("DOMContentLoaded", ShowLoader)
+
+
+
+
 // THIS CODE IS RESPONSIBLE FOR CHANGING THE BACKGROUND COLOR OF OUR WEBSITE TO WHITE OR GRAY
 let moreProjects = document.querySelector(".ExploreMore")
 const linkedInMe = document.querySelector(".fa-linkedin");

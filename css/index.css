@@ -15,6 +15,46 @@ body {
     background-color: var(--black-color-main);
 }
 
+/* Animation - Loading */
+
+.loader {
+    margin: auto;
+    border: 20px solid #eaf0f6;
+    border-radius: 50%;
+    border-top: 20px solid #ff7a59;
+    border-bottom: 20px solid #000000;
+    /* border-left: 20px solid #207d7d; */
+    width: 200px;
+    height: 200px;
+    animation: spinner 1s linear infinite;
+    position: absolute;
+    top: 30vh;
+    left: 90vh;
+}
+.loaderText{
+    position: absolute;
+        top: 60vh;
+        left: 95vh;
+        color: var(--white-color-main);
+}
+.main {
+    display: none;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0DEG);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+        /* Change the degree animation to your choice extent */
+    }
+}
 /* NAVS SECTION */
 .navs {
     color: #fff;
@@ -813,7 +853,19 @@ body {
     display: none;
 } */
 @media (width <=820px) {
+/* For our Animation Style */
+.loader {
+        /* border-left: 20px solid #207d7d; */
+        top: 30vh;
+        left: 14vh;
+    }
 
+    .loaderText {
+        position: absolute;
+        top: 59vh;
+        left: 20vh;
+        color: var(--white-color-main);
+    }
     /* *{
         overflow-x: hidden;
     } */
