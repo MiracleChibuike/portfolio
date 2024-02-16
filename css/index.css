@@ -296,39 +296,110 @@ body {
 }
 
 .info {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
+    width: 55%;
     margin-top: 20px;
 }
-
-#educationClick:hover {
-    transition: all .7s;
-    transform: translateX(-15px);
+.MySkills button{
+    border: none;
+    margin: 10px;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+.MySkills button:hover{
     cursor: pointer;
     text-decoration: underline;
-    text-decoration-color: #ed0c0c;
-    text-decoration-thickness: 3px;
+    transform: translateX(-10px);
+    transition: .4s ease-in-out;
+    font-weight: bold;
+    text-decoration-color: #4070f4;
 }
-
-#slillsClick:hover {
-    transition: all .7s;
-    transform: translateX(-15px);
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: #ed0c0c;
-    text-decoration-thickness: 3px;
+/* For Skills - Content */
+.skills-Parent{
+    position: relative;
+        max-width: 500px;
+        width: 100%;
+        background: #fff;
+        margin: 0 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: var(--black-color-main);
 }
-
-#experienceClick:hover {
-    transition: all .7s;
-    transform: translateX(-15px);
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: #ed0c0c;
-    text-decoration-thickness: 3px;
+.skills-Parent .skill-box{
+    width: 100%;
+    margin: 25px 0;
 }
+.titleHTML, .title.bootstrap, .title.Git, .title.JS{
+    display: block;
+        font-size: 18px;
+        font-weight: 600;
+}
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 7px;
+    margin-top: 6px;
+}
+.skill-per{
+    position: relative;
+        display: block;
+        width: 90%;
+        height: 100%;
+        background: #4070f4;
+        border-radius: 7px;
+        animation: progress 0.7s ease-in-out forwards;
+        /* opacity: 0; */
+}
+.skill-per.css{
+    width: 70%;
+    animation-delay: 0.1s;
+}
+.skill-per.bootstrap{
+    width: 70%;
+    animation-delay: 0.2s;
+}
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 0.3s;
+}
+.skill-per.git{
+    width: 50%;
+    animation-delay: 0.4s;
+}
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
+.skill-per .toolcent{
+    position: absolute;
+        right: -14px;
+        top: -28px;
+        background: #4070f4;
+        font-size: 9px;
+        font-weight: 500;
+        color: #fff;
+        padding: 2px 6px;
+        border-radius: 3px;
+        z-index: 1;
+}
+.toolcent::before{
+    position: absolute;
+        content: "";
+        left: 50%;
+        height: 10px;
+        width: 10px;
+        z-index: -1;
+        bottom: -2px;
+        background-color: #4070f4;
+        transform: translateX(-50%) rotate(45deg);
+}
+  
 /* .skills, .experince, .education{
     padding: 35px;
 } */
@@ -876,25 +947,25 @@ body {
     .navbarActive {
         border: 3px solid rgb(150, 150, 150);
         background-color: transparent;
-        padding: 4px;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        padding: 2px 4px;
+        height: 35px;
         border-radius: 7px;
         margin-top: 10px;
         color: var(--secondary-white-color);
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #navbarCancel{
         border: 3px solid rgb(150, 150, 150);
             background-color: transparent;
-            padding: 5px;
-            width: 30px;
-            height: 30px;
+            padding: 2px 6px;
+            width: 35px;
+            height: 35px;
             border-radius: 7px;
             margin-top: 10px;
             color: var(--secondary-white-color);
-            font-size: 20px;
+            font-size: 25px;
         display: none;
     }
     .navbarActive:hover,
@@ -996,6 +1067,19 @@ body {
         width: 100%;
         margin-top: 20px;
     }
+    /* Skills Section */
+    .title.bootstrap{
+        position: relative;
+            right: 50px;
+    }
+    .title.JS{
+        position: relative;
+        right: 70px;
+    }
+    .title.Git{
+        position: relative;
+        right: 70px;
+    }
 
     .developerAbout {
         margin-top: 170px;
@@ -1011,11 +1095,11 @@ body {
     /* .skills, .experince, .education{
     padding: 35px;
 } */
-    .skillsContents ul,
+    /* .skillsContents ul,
     .experienceContents ul,
     .educationContents ul {
         list-style-type: none;
-    }
+    } */
 
     /* SERVICES SECTION  */
     #service {

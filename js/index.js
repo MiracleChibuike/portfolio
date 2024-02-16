@@ -1,25 +1,25 @@
 
 // To control the animation
-function ShowLoader() {
-    var conatiner_main = document.querySelector(".main-container");
-    var headre_Content = document.querySelector(".loader");
-    var loaderText = document.querySelector(".loaderText");
+// function ShowLoader() {
+//     var conatiner_main = document.querySelector(".main-container");
+//     var headre_Content = document.querySelector(".loader");
+//     var loaderText = document.querySelector(".loaderText");
 
-    // Show loader Initially
+//     // Show loader Initially
 
-    headre_Content.style.display = "block";
-    conatiner_main.style.display = "none";
+//     headre_Content.style.display = "block";
+//     conatiner_main.style.display = "none";
 
-    setTimeout (function () {
-        headre_Content.style.display = "none";
-        conatiner_main.style.display = "block";
-        loaderText.style.display = "none"
-    }, 7000)
+//     setTimeout (function () {
+//         headre_Content.style.display = "none";
+//         conatiner_main.style.display = "block";
+//         loaderText.style.display = "none"
+//     }, 7000)
 
 
-}
-// Call the loadAnim function when your page is ready
-document.addEventListener("DOMContentLoaded", ShowLoader)
+// }
+// // Call the loadAnim function when your page is ready
+// document.addEventListener("DOMContentLoaded", ShowLoader)
 
 
 
@@ -212,37 +212,37 @@ function SupportMe() {
 
 // ABOUT ME SECTION
 
-let actionClickSkills = document.getElementById("slillsClick").addEventListener("click", function skillsNavigate() {
-    let skillsContentsClick = document.querySelector(".skillsContents");
-    // console.log(skillsContentsClick);
-    if (skillsContentsClick.style.display === "block") {
-        skillsContentsClick.style.display = "none"
-    }else{
-        skillsContentsClick.style.display = "block"
-    }
-})
+// let actionClickSkills = document.getElementById("slillsClick").addEventListener("click", function skillsNavigate() {
+//     let skillsContentsClick = document.querySelector(".skillsContents");
+//     // console.log(skillsContentsClick);
+//     if (skillsContentsClick.style.display === "block") {
+//         skillsContentsClick.style.display = "none"
+//     }else{
+//         skillsContentsClick.style.display = "block"
+//     }
+// })
 
                                         // THE JS CODE FOR THE NAVBAR ICON CLICK DISPLAY
     // THE CODE BELOW IS RESPONSIBLE FOR HIDING AND DISPLAYING THE NAVBAR ITEMS ON SMALL SCREENS
 
-let actionClickExperience = document.getElementById("experienceClick").addEventListener("click", function experienceNavigate(params) {
-    let experienceContentsClick = document.querySelector(".experienceContents");
-    console.log(experienceContentsClick);
-    if (experienceContentsClick.style.display === "none") {
-        experienceContentsClick.style.display = "block";
-    }else{
-        experienceContentsClick.style.display = "none"
-    }
-})
-let actionClickEducation = document.getElementById("educationClick").addEventListener("click", function educationNavigate() {
-    let educationContentsClick = document.querySelector(".educationContents");
-    console.log(educationContentsClick);
-    if (educationContentsClick.style.display === "none") {
-        educationContentsClick.style.display = "block"
-    }else{
-        educationContentsClick.style.display = "none"
-    }
-})
+// let actionClickExperience = document.getElementById("experienceClick").addEventListener("click", function experienceNavigate(params) {
+//     let experienceContentsClick = document.querySelector(".experienceContents");
+//     console.log(experienceContentsClick);
+//     if (experienceContentsClick.style.display === "none") {
+//         experienceContentsClick.style.display = "block";
+//     }else{
+//         experienceContentsClick.style.display = "none"
+//     }
+// })
+// let actionClickEducation = document.getElementById("educationClick").addEventListener("click", function educationNavigate() {
+//     let educationContentsClick = document.querySelector(".educationContents");
+//     console.log(educationContentsClick);
+//     if (educationContentsClick.style.display === "none") {
+//         educationContentsClick.style.display = "block"
+//     }else{
+//         educationContentsClick.style.display = "none"
+//     }
+// })
 
 // CONTACT SECTION
 // 
