@@ -304,14 +304,16 @@ body {
     margin: 10px;
     padding: 4px 8px;
     border-radius: 5px;
+    background: #ffa500;
+    color: var(--white-color-main);
 }
 .MySkills button:hover{
     cursor: pointer;
-    text-decoration: underline;
-    transform: translateX(-10px);
-    transition: .4s ease-in-out;
-    font-weight: bold;
-    text-decoration-color: #4070f4;
+    /* text-decoration: underline; */
+    transition: all .4s ease-in;
+    background: var(--white-color-main);
+    color: var(--black-color-main);
+    transform: translateY(-10px);
 }
 /* For Skills - Content */
 .skills-Parent{
@@ -323,6 +325,7 @@ body {
         padding: 10px 20px;
         border-radius: 10px;
         color: var(--black-color-main);
+        display: none;
 }
 .skills-Parent .skill-box{
     width: 100%;
@@ -403,28 +406,38 @@ body {
 /* .skills, .experince, .education{
     padding: 35px;
 } */
-.skillsContents ul,
-.experienceContents ul,
-.educationContents ul {
-    list-style-type: none;
+.Edu{
+    background: var(--white-color-main);
+    color: var(--black-color-main);
+    padding: 15px 20px;
+    border-radius: 8px;
+    animation-name: eduRotate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: .2s ease-in-out;
 }
+@keyframes eduRotate {
+    0% {
+            transform: scale(0);
+        }
+    
+        50%,
+        100% {
+            transform: scale(1.0, 1.0);
+        }
+    }
 
-.skillsContents,
-.experienceContents,
-.educationContents {
-    font-size: 18px;
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-top-width: 5px;
 }
-
-.skillsContents,
-.experienceContents,
-.educationContents {
-    transition: all .7s ease;
-    margin-top: 35px;
+.schoolInfo, .schoolinfo2, .schoolinfo3{
+    padding: 15px 10px;
 }
-
-.experienceContents,
-.educationContents {
-    display: none;
+.info1, .info2, .info3{
+    display: flex;
+    justify-content: space-between;
 }
 
 .developerAbout {
