@@ -105,9 +105,74 @@ navberCancel.addEventListener("click", function () {
         togglerLinks.style.display = "none"
         navberActive.style.display = "block"
         navberCancel.style.display = "none"
-
     }
+            togglerLinks.classList.add("hide-menu");
+
 })
+
+
+// for SKILLS, EXPERINECE NAD EDUCATION SECTION
+const skill_Set = document.getElementById("skill-set");
+const education_Set = document.getElementById("Education-set");
+const Exp_set = document.getElementById("Experience-set");
+var edu = document.querySelector(".Edu");
+var skills_Content = document.querySelector(".skills-Parent");
+var exp = document.querySelector(".exp");
+
+education_Set.addEventListener("click", ()=>{
+    if (edu.style.display = "none") {
+        edu.style.display = "block";
+        skills_Content.style.display = "none";
+           exp.style.display = "none";
+    }
+    education_Set.style.background = "var(--white-color-main)";
+    education_Set.style.color = "var(--black-color-main)";
+    education_Set.style.borderBottom = "4px solid #ffa500"
+    education_Set.style.borderRadius = "none"
+    // education_Set.style.paddingBottom = "15px"
+    setTimeout(function () {
+        skill_Set.style.background = "#ffa500";
+        skill_Set.style.color = "var(--white-color-main)";
+        Exp_set.style.background = "#ffa500";
+        Exp_set.style.color = "var(--white-color-main)"
+    }, 1000)
+}) 
+
+skill_Set.addEventListener("click", ()=>{
+    if (edu.style.display = "block") {
+        edu.style.display = "none";
+        skills_Content.style.display = "block"
+        exp.style.display = "none"
+    }
+    skill_Set.style.background = "var(--white-color-main)";
+    skill_Set.style.color = "var(--black-color-main)";
+        skill_Set.style.borderBottom = "4px solid #ffa500";
+
+    setTimeout(function () {
+      education_Set.style.background = "#ffa500";
+      education_Set.style.color = "var(--white-color-main)";
+      Exp_set.style.background = "#ffa500";
+      Exp_set.style.color = "var(--white-color-main)";
+    }, 1000);
+})
+
+Exp_set.addEventListener("click", ()=>{
+    exp.style.display = "block";
+    skills_Content.style.display = "none";
+    edu.style.display = "none";
+    
+   Exp_set.style.background = "var(--white-color-main)";
+   Exp_set.style.color = "var(--black-color-main)";
+   Exp_set.style.borderBottom = "4px solid #ffa500";
+   Exp_set.style.borderRadius = "none";
+     setTimeout(function () {
+       skill_Set.style.background = "#ffa500";
+       skill_Set.style.color = "var(--white-color-main)";
+        education_Set.style.background = "#ffa500";
+        education_Set.style.color = "var(--white-color-main)";
+     }, 1000);
+})
+
 
 function close(){
      let toogle = document.querySelector(".nav-links");

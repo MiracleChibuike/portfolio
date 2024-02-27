@@ -299,6 +299,15 @@ body {
     width: 55%;
     margin-top: 20px;
 }
+/* .skill-set{
+    
+}
+.edu-set{
+
+}
+.exp-set{
+
+} */
 .MySkills button{
     border: none;
     margin: 10px;
@@ -311,9 +320,13 @@ body {
     cursor: pointer;
     /* text-decoration: underline; */
     transition: all .4s ease-in;
+    /* background: var(--white-color-main); */
+    transform: translateY(-10px);
+}
+#skill-set{
     background: var(--white-color-main);
     color: var(--black-color-main);
-    transform: translateY(-10px);
+    border-bottom: 4px solid #ffa500;
 }
 /* For Skills - Content */
 .skills-Parent{
@@ -321,11 +334,24 @@ body {
         max-width: 500px;
         width: 100%;
         background: #fff;
+        /* background: rgb(91, 88, 88); */
         margin: 0 20px;
         padding: 10px 20px;
         border-radius: 10px;
         color: var(--black-color-main);
-        display: none;
+}
+.skills-Parent:hover{
+    cursor: pointer;
+    background: #9e2323;
+    transition: .5s ease;
+    color: var(--secondary-white-color);
+}
+.Edu:hover, .exp:hover{
+    cursor: pointer;
+    background: #9e2323;
+    color: var(--secondary-white-color);
+    transition: .5s ease;
+    transform: translateY(15px);
 }
 .skills-Parent .skill-box{
     width: 100%;
@@ -407,14 +433,16 @@ body {
     padding: 35px;
 } */
 .Edu{
-    background: var(--white-color-main);
-    color: var(--black-color-main);
+    /* background: var(--white-color-main); */
+    background: rgb(91, 88, 88);
+    color: var(--white-color-main);
     padding: 15px 20px;
     border-radius: 8px;
     animation-name: eduRotate;
     animation-duration: 4s;
     animation-iteration-count: 1;
     transition: .2s ease-in-out;
+    display: none;
 }
 @keyframes eduRotate {
     0% {
@@ -438,6 +466,26 @@ hr{
 .info1, .info2, .info3{
     display: flex;
     justify-content: space-between;
+}
+/* Experience */
+.exp{
+    /* background: var(--white-color-main) */
+    background: rgb(91, 88, 88);
+    color: var(--white-color-main);
+    padding: 15px 20px;
+        border-radius: 8px;
+        animation-name: eduRotate;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            transition: .2s ease-in-out;
+            display: none;
+}
+.workinfo, .workinfo2{
+    display: flex;
+    justify-content: space-between;
+}
+.expInit, .exp2{
+    padding: 15px 10px;
 }
 
 .developerAbout {
@@ -990,7 +1038,10 @@ hr{
     .nav-links ul li {
         margin: 15px;
     }
-
+    .hide-menu{
+        background: var(--black-color-main);
+        transition: all .7s ease-in-out;
+    }
     .nav-links {
         display: none;
         position: absolute;

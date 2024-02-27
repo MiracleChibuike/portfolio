@@ -39,7 +39,7 @@
 
 
              -->
-        <div class="nav-links">
+        <div class="nav-links hide-menu">
           <ul>
             <li> <a href="#home"><span class="logoSapan">Home</span></a> </li>
             <li> <a href="#about">About</a> </li>
@@ -84,7 +84,8 @@
 
           </p>
           <div class="MySkills">
-            <button>Skills</button> <button>Education</button><button>Experience</button>
+            <button id="skill-set">Skills</button> <button id="Education-set">Education</button>
+            <button id="Experience-set">Experience</button>
           </div>
           <div class="info">
             <div class="skills-Parent">
@@ -139,7 +140,7 @@
               <div class="schoolInfo">
                <div class="info1">
                 <div class="award">
-                  <p><strong>High School Certificate (Diploma)</strong></p>
+                  <p><strong>High School <br> Certificate (Diploma)</strong></p>
                 </div>
                 <div class="awardyear">
                   <p>2014-2020</p>
@@ -174,7 +175,7 @@
               <div class="schoolinfo3">
                 <div class="info3">
                   <div class="award3">
-                    <p><strong>Oluaka Institute of Technology <br> (Diploma in Front-end Web Development)</strong></p>
+                    <p><strong>Oluaka Institute <br> of Technology <br> (Diploma in Front-end Web Development)</strong></p>
                   </div>
                   <div class="awardyear3">
                     <p>2023</p>
@@ -188,6 +189,82 @@
                     graduated with distinction.
                   </li>
                 </ul>
+              </div>
+            </div>
+            <!-- Experience section -->
+            <div class="exp">
+              <div class="expInit">
+                <div class="descriptionexp">
+                  <div class="workinfo">
+                    <div class="workplace">
+                      <p><strong><em>Oluaka Institute <br> of Technology</em> <br><small> -Obinze Nigeria</small></strong></p>
+                    </div>
+                    <div class="ex-prole">
+                      <p><strong>Web <br> Development Instructor</strong> <br> <small>
+                          November 2023 - February 2024</small>
+                      </p>
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      I infuenced the academic and professional growth of 24 students as a Web Development instructor by developing engaging 
+                      web development curriculum and delivered interactive lessons to 24 students.
+                    </li>
+                    <li>
+                      Utilized strong communication and problem-solving skills to guide students through technical challenges and foster their
+                      understanding of key concepts.
+                    </li>
+                    <li>
+                      Achieved notable outcomes by guiding students in building real-life projects, leading to improved project
+                      completion rates, and enhancing their coding skills.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <!-- Second Job -->
+              <div class="exp2">
+                <div class="descriptionexp2">
+                  <div class="workplace2">
+                    <h3>Open Source Contributions</h3>
+                   <div class="workinfo2">
+                    <p><strong><em>School Management System <a href="https://github.com/streethub-schola">Streethub Academy Github Link <i
+                              class="fa-solid fa-arrow-up-right-from-square"></i></a> (Developed using HTML, CSS,
+                          and JavaScript)
+                        </em> <br> <small> -Remote, Nigeria</small></strong></p>
+                    </div>
+                    <div class="exp-role2">
+                      <p><strong>Front-End Developer</strong> <br> <small>
+                          September 2023 - PRESENT</small>
+                      </p>
+                    </div>
+                   </div>
+                  <ul>
+                    <li>
+                     I Presented fndings in a clear and concise manner to key decision makers which helped 
+                      in project organization.
+                    </li>
+                    <li>
+                      I Designed and developed a comprehensive student registration page, allowing administrators to efficiently register new
+                      students.
+                    </li>
+                    <li>
+                      Implemented a user-friendly student result sheet page, enabling efficient access to academic performance data for all
+                      students.
+                    </li>
+                    <li>
+                      Created a staff assignment posting page, facilitating the creation and distribution of assignments to students.
+                    </li>
+                    <li>
+                      Collaborated with a team of  5  developers in an online code repository, adhering to best practices and contributing to code
+                      reviews.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Open Source Contriutions -->
+                <div class="openSource">
+
+                </div>
               </div>
             </div>
            
@@ -468,18 +545,18 @@
             </button>
           </div>
           <div class="contactForm">
-            <form action="mailto:mirachibuike27@gmail.com" method="post" autocomplete="on">
+            <form action="mailto:mirachibuike27@gmail.com" method="post" autocomplete="on" enctype="text/plain">
              <div class="forName">
               <label for="myName"></label>
-              <input type="text"  placeholder="Your Name" required id="myName" class="nameInput" >
+              <input type="text"  placeholder="Your Name" required id="myName" class="nameInput" name="Your Name">
               <span id="actionMsg"></span>
              </div>
              <div class="forEmail">
               <label for="myEmail"></label>
-              <input type="email"  placeholder="Your Email" required id="myEmail" class="emailInput" >
+              <input type="email"  placeholder="Your Email" required id="myEmail" class="emailInput" name="Your Email">
              </div>
              <div class="messageBox">
-              <textarea name="text" id="YourTextMsg" cols="30" rows="10" placeholder="Type Your Message" required></textarea>
+              <textarea name="text" id="YourTextMsg" cols="30" rows="10" placeholder="Type Your Message" name="Your Message" required></textarea>
              </div>
              <button type="submit" class="submitBtn">
               Send Message
