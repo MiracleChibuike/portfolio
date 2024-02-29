@@ -342,16 +342,15 @@ body {
 }
 .skills-Parent:hover{
     cursor: pointer;
-    background: #9e2323;
-    transition: .5s ease;
-    color: var(--secondary-white-color);
+    rotate: 2.5deg;
+        transition: .5s ease;
 }
 .Edu:hover, .exp:hover{
     cursor: pointer;
-    background: #9e2323;
+    background: #9b3333;
     color: var(--secondary-white-color);
     transition: .5s ease;
-    transform: translateY(15px);
+    transform: rotate(2.5deg);
 }
 .skills-Parent .skill-box{
     width: 100%;
