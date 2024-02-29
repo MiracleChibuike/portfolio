@@ -14,7 +14,9 @@
 body {
     background-color: var(--black-color-main);
 }
-
+.main-container{
+    display: none;
+}
 /* Animation - Loading */
 
 .loader {

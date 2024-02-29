@@ -1,5 +1,24 @@
 
 // To control the animation
+function ShowLoader() {
+  var container_main = document.querySelector(".main-container");
+  var loader = document.querySelector(".loader");
+  var loaderTxt = document.querySelector(".loaderText");
+
+  // Hide main container and show loader initially
+  container_main.style.display = "none";
+  loader.style.display = "block";
+
+  setTimeout(function () {
+    loader.style.display = "none";
+    loaderTxt.style.display = "none"
+    container_main.style.display = "block";
+  }, 7000); // Delay to show the main container
+}
+
+// Show loader immediately
+ShowLoader();
+
 // function ShowLoader() {
 //     var conatiner_main = document.querySelector(".main-container");
 //     var headre_Content = document.querySelector(".loader");
