@@ -165,11 +165,11 @@ body {
 }
 
 .coffe {
-    padding: 10px;
+    /* padding: 2px 6px; */
     height: 50px;
-    border: none;
+    border: 1px solid var(--white-color-main);
     color: #fff;
-    background-color: #53b313;
+    background: transparent;
     font-size: 20px;
     border-radius: 10px;
     margin-left: 10px;
@@ -178,6 +178,10 @@ body {
     animation-name: buttonRotate;
     animation-iteration-count: infinite;
     animation-duration: 3s;
+}
+#buyCoffee{
+    height: 40px;
+    padding: 0 7px;
 }
 @keyframes buttonRotate {
     0%{
