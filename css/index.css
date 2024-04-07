@@ -1094,6 +1094,16 @@ hr{
                 width: 100%;
             }
     }
+    /* nav-remove animation */
+        @keyframes hideNav {
+            0% {
+                width: 100%;
+            }
+    
+            100% {
+                width: 0;
+            }
+        }
     .nav-links a {
         display: block;
         text-align: center;

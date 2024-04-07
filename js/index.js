@@ -112,20 +112,21 @@ function navToggle() {
         togglerLinks.style.display = "block"
         navberActive.style.display = "none"
         navberCancel.style.display = "block"
-    }else{
-        
-        togglerLinks.style.display = "none"
     }
 }
 navberCancel.addEventListener("click", function () {
     let togglerLinks = document.querySelector(".nav-links");
 
     if (togglerLinks.style.display = "block") {
-        togglerLinks.style.display = "none"
+      togglerLinks.style.animation = "hideNav 2s linear";
+      setTimeout(() => {
+        togglerLinks.style.display = "none";
         navberActive.style.display = "block"
         navberCancel.style.display = "none"
+        togglerLinks.style.animation = ""; // Reset animation
+      }, 1000); // Match the duration of the animation
+      
     }
-            togglerLinks.classList.add("hide-menu");
 
 })
 
