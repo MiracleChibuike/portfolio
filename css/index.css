@@ -206,7 +206,7 @@ body {
 }
 
 
-@keyframes bounce {
+/* @keyframes bounce {
     0% {
         transform: scale(0);
     }
@@ -222,7 +222,7 @@ body {
     100% {
         transform: scale(0.5);
     }
-}
+} */
 
 .intro span {
     color: #ed0c0c;
